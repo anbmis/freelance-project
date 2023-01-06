@@ -21,15 +21,6 @@ body {
     margin-top: 3%;
 }
 
-#avatar{
-    display: absolute;
-}
-
-#avatar > p {
-    position: relative;
-    right:0;
-}
-
 .navbar-fixed {
     @apply fixed z-10 bg-white bg-opacity-80
 }
