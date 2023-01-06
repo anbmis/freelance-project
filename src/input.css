@@ -4,6 +4,30 @@
 
 body {
     font-family: "Inter", sans-serif;
+    font-size: larger;
+}
+
+#nama-sekolah > p{
+    font-weight: bold;
+    color: blue;
+}
+
+#nav-menu > span{
+    font-weight: bold;
+    color: blue;
+}
+
+#login{
+    margin-top: 3%;
+}
+
+#avatar{
+    display: absolute;
+}
+
+#avatar > p {
+    position: relative;
+    right:0;
 }
 
 .navbar-fixed {

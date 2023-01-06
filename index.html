@@ -5,64 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
-    <title>Portofolio</title>
+    <title>slicing</title>
 </head>
-<body>
-    
-    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10  bg-white bg-opacity-80 ">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4 py-4">
-                    <a href ="#home" class="font-bold text-lg text-primary block">Portofolio_Logo</a>
+<body class="p-4">
+    <!-- navbar -->
+    <header class="flex flex-row w-full align-baseline justify-center">
+        <img src="" alt="Logo Sekolah" width="30" height="30"/>
+            <div id="nama-sekolah" class="flex flex-col text-sm mx-2">
+                <p class="text-center">SMP MUHAMMADIYAH 1</p>
+                <p class="text-center">DENPASAR</p>
+            </div>   
+            <div class="grid grid-cols-3">
+                <div id="nav-menu" class="col-span-2 grid-cols-4 ml-16">
+                    <span class="mr-4">Home</span>
+                    <span class="mr-4">Informasi PPDB</span>
+                    <span class="mr-4">Kontak</span>
+                    <span class="mr-4">Daftar PPDB</span>
+                </div> 
+                <div class="relative">
+                    <button class="absolute rounded-md flex-wrap right-0 grid bg-blue-900 hover:bg-blue-700 duration-700 text-white p-2 px-8 text-sm ease-in-out">Download Brosur</button>
                 </div>
-                <div class="flex items-center px-4"></div>
-                    <button id="hamburger" name="hamburger"
-                    class="block absolute right-4">
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                    </button>
-
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg
-                    rounded-lg max-w-[250px] w-full right-4 top-full ">
-                        <ul>
-                            <li>
-                                <a href="#home" class="text-base text-dark hover:text-primary flex py-2 mx-8">Beranda</a>
-                            </li>
-                            <li>
-                                <a href="#portofolio" class="text-base text-dark hover:text-primary flex py-2 mx-8">Portofolio</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+            </div>     
     </header>
 
-
-    <section id="home" class="pt-24">
-        <div class="container"> 
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl"> Halo semua 👋, saya 
-                        <span class="block font-bold  text-dark text-4xl">Harry Rahmadi Munly</span>
-                    </h1>
-                    <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Freelance Frontend Web Developer & 
-                        <span class="text-dark">Informatics Graduate</span>
-                    </h2>
-                    <a href="#" class="text-base font-semibold text-white
-                    bg-primary py-3 px-8 rounded-full hover:opacity-80
-                    hover:shadow-lg duration-300 ease-in-out">Hubungi Saya</a>
-                </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-5">
-                        <img src="dist/foto.png" alt="Foto"
-                        class="max-w-full mx-auto">   
-                    </div>
-                </div>
-            </div>    
+    <!-- login -->
+    <div id="login" class="mt-18 bg-indigo-500 grid grid-cols-2 p-4 rounded-lg">
+        <div class="block text-white">
+            <p class="text-3xl"> Gali Potensi, </p>
+            <p class="text-3xl"> Raih Prestasi </p>
+            <div class="my-2">
+                <p> Satu langkah lebih dekat dengan impianmu, </p>
+                <p> dengan mulai belajar di lembaga pendidikan terbaik. </p>
+            </div>
+                
+            <div class="mt-3 space-x-4">
+                <button class="bg-blue-900 hover:bg-blue-700 p-2 px-8 rounded-md">Login</button>
+                <button class="bg-yellow-400 hover:bg-yellow-300 p-2 px-8 rounded-md">Cek Status Pembayaran</button>
+            </div>
         </div>
-    </section>
+        <div>
+            <div id="avatar">
+                <img class="float-right" src="assets/blob-kuning.svg" alt="blob blob-kuning" width="150" height="150">
+                <p> foto pelajar memegang buku </p>
+                <p> background lingkaran </p>
+            </div>
+        </div>          
+    </div>
 
     <script src="dist/script.js"></script>
 </body>
