@@ -21,6 +21,11 @@ body {
     margin-top: 3%;
 }
 
+div > button > svg{
+    float: right;
+}
+
+
 .navbar-fixed {
     @apply fixed z-10 bg-white bg-opacity-80
 }

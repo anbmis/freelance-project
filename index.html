@@ -9,12 +9,14 @@
 </head>
 <body class="p-4">
     <!-- navbar -->
-    <div class="flex flex-row w-full mx-8 align-middle">
-            <img class="inline-flex" src="assets/logo_sekolah.png" alt="Logo Sekolah" width="40px" height="40px"/>
-            <div id="nama-sekolah" class="grid-rows-2 text-sm mx-4 justify-items-center">
+    <div class="flex mx-8">
+        <div class="grid-cols-2">
+            <img src="assets/logo_sekolah.png" alt="Logo Sekolah" width="40px" height="40px" class="inline-block"/>
+            <span id="nama-sekolah" class="grid-rows-2 text-sm mx-4 align-middle inline-block">
                 <p class="text-start">SMP MUHAMMADIYAH 1</p>
                 <p class="text-start">DENPASAR</p>
-            </div>
+            </span>
+        </div>
             
         <div class="grid grid-cols-3">
             <div id="nav-menu" class="col-span-2 grid-cols-4 ml-16 lg:space-x-8">
@@ -53,22 +55,20 @@
 
     <!-- FAQ -->
     <div id="faq" class="mt-10 container mx-auto">
-        <div class="text-4xl text-center border-b-4 border-yellow-400 mx-[100px]">Frequently Asked Question <span class="font-bold"> (FAQ) </span></div>
-        <div class="mx-auto w-fit">
-            <div class="space-y-8 border-3">
-                <span>Alur Pendaftaran</span>
-                <button><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-            </div>   
-            <div>
-                <div class="space-y-8 border-4"></div>
-                <span>Syarat Pendaftaran</span>
-                <button><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+        <div class="text-4xl text-center border-b-4 border-yellow-400 mx-[100px] mb-4">Frequently Asked Question <span class="font-bold"> (FAQ) </span></div>
+        <div class="mx-32 space-y-4">
+            <div class="relative border-4 shadow-lg">
+                <div class="inline-block top-0 py-2 px-4">Alur Pendaftaran</div>
+                <button class="w-6 h-6 absolute right-2 top-0"><svg class="w-6 h-6 absolute right-0 top-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             </div>
-            <div>
-                <div class="space-y-8 border-3"></div>
-                <span>Informasi Tes PPDB</span>
-                <button><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <div class="relative border-4 shadow-lg">
+                <div class="inline-block top-0 py-2 px-4">Syarat Pendaftaran</div>
+                <button class="w-6 h-6 absolute right-2 top-0"><svg class="w-6 h-6 absolute right-0 top-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             </div>
+            <div class="relative border-4 shadow-lg">
+                <div class="inline-block top-0 py-2 px-4">Informasi Tes PPDB</div>
+                <button class="w-6 h-6 absolute right-2 top-0"><svg class="w-6 h-6 absolute right-0 top-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            </div> 
         </div>       
     </div>
 </body>
