@@ -9,30 +9,30 @@
 </head>
 <body class="p-4">
     <!-- navbar -->
-    <div class="flex mx-8">
-        <div class="grid-cols-2">
-            <img src="assets/logo_sekolah.png" alt="Logo Sekolah" width="40px" height="40px" class="inline-block"/>
-            <span id="nama-sekolah" class="grid-rows-2 text-sm mx-4 align-middle inline-block">
+    <div class="grid grid-cols-6 mx-8">
+        <div class="col-span-1 flex align-middle">
+            <img src="assets/logo_sekolah.png" alt="Logo Sekolah" width="40px" height="40px" class="inline"/>
+            <span id="nama-sekolah" class="grid-rows-2 text-sm ml-4">
                 <p class="text-start">SMP MUHAMMADIYAH 1</p>
                 <p class="text-start">DENPASAR</p>
             </span>
         </div>
             
-        <div class="grid grid-cols-3">
+        <div class="grid  grid-cols-3 col-span-4">
             <div id="nav-menu" class="col-span-2 grid-cols-4 ml-16 lg:space-x-8">
                 <span>Home</span>
                 <span>Informasi PPDB</span>
                 <span>Kontak</span>
                 <span>Daftar PPDB</span>
             </div> 
-            <div class="mr-4">
-                <button class="float-right rounded-md grid bg-blue-900 hover:bg-blue-700 duration-700 text-white p-2 px-8 text-sm ease-in-out">Download Brosur</button>
+            <div class="col-span-1 mr-4 float-right">
+                <button class="rounded-md grid bg-blue-900 hover:bg-blue-700 duration-700 text-white p-2 px-8 text-sm ease-in-out">Download Brosur</button>
             </div>
         </div>     
     </div>
 
     <!-- login -->
-    <div id="login" class="mt-18 bg-indigo-500 grid grid-cols-2 p-4 mx-8 rounded-lg">
+    <div id="login" class=" bg-indigo-500 grid grid-cols-2 p-8 mx-8 rounded-lg">
         <div class="relative text-white">
             <p class="text-4xl mb-3"> Gali Potensi, </p>
             <p class="text-4xl mb-3"> Raih Prestasi </p>
@@ -55,7 +55,7 @@
 
     <!-- FAQ -->
     <div id="faq" class="mt-10 container mx-auto">
-        <div class="text-4xl text-center border-b-4 border-yellow-400 mx-[100px] mb-4">Frequently Asked Question <span class="font-bold"> (FAQ) </span></div>
+        <div class="text-4xl text-center text- border-b-4 border-yellow-400 mx-[100px] mb-4">Frequently Asked Question <span class="font-bold"> (FAQ) </span></div>
         <div class="mx-32 space-y-4">
             <div class="relative border-4 shadow-lg">
                 <div class="inline-block top-0 py-2 px-4">Alur Pendaftaran</div>
@@ -63,13 +63,28 @@
             </div>
             <div class="relative border-4 shadow-lg">
                 <div class="inline-block top-0 py-2 px-4">Syarat Pendaftaran</div>
-                <button class="w-6 h-6 absolute right-2 top-0"><svg class="w-6 h-6 absolute right-0 top-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                <button id="syapen-btn"class="w-6 h-6 absolute right-2 top-0"><svg class="w-6 h-6 absolute right-0 top-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                <ol id="syapen" class="list-decimal ml-8 hidden mb-2">
+                    <li class="text-sm">Beragama Islam</li>
+                    <li class="text-sm">Memiliki NISN</li>
+                    <li class="text-sm">Berusia maksimum 15 tahun pada 1 Juli 2023</li>
+                    <li class="text-sm mt-4">Berkas yang harus dilengkapi pada waktu pendaftaran:</li>
+                    <ul class="ml-2">
+                        <li class="text-sm list-disc">a. Mengisi Formulir Pendaftaran</li>
+                        <li class="text-sm list-disc">b. Uang pendaftaran Rp. 300.000</li>
+                        <li class="text-sm list-disc">c. Pasfoto warna 3x4 background merah sejumlah 4 lembar (untuk putri berjilbab putih)</li>
+                    </ul>
+                </ol>
             </div>
             <div class="relative border-4 shadow-lg">
                 <div class="inline-block top-0 py-2 px-4">Informasi Tes PPDB</div>
                 <button class="w-6 h-6 absolute right-2 top-0"><svg class="w-6 h-6 absolute right-0 top-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
             </div> 
-        </div>       
+        </div>     
     </div>
+    <div class="text-4xl text-center border-b-4 border-yellow-400 mx-[100px] mt-8">Kontak<span class="font-bold "> Kami</span></div>
+    
+
+    <script src="dist/script.js"></script>
 </body>
 </html>
